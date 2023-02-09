@@ -1,0 +1,11 @@
+apiVersion: "spec.keptn.sh/0.2.0"
+kind: "Shipyard"
+metadata:
+  name: "upgrade-poc"
+spec:
+  stages:
+    - name: "stage-perf-evaluation"
+      sequences:
+        - name: "performance-evaluation"
+          tasks:
+            - name: "evaluation"
