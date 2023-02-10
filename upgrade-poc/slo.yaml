@@ -32,6 +32,10 @@ objectives:
     pass:
       - criteria:
           - "<505836"
+  - sli: "container_cpu_usage_seconds_total_sum"
+    pass:
+      - criteria:
+          - "<75356416"
 total_score:
   pass: "100%"
   warning: "75%"
