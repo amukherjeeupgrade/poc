@@ -6,4 +6,4 @@ indicators:
   # cpu_usage: avg(rate(container_cpu_usage_seconds_total{instance="ip-172-17-131-172.us-west-2.compute.internal",job="kubernetes-cadvisor"}[5m]))
   jvm_memory_bytes_used: avg(jvm_memory_bytes_used)
   container_cpu_usage_seconds_total_sum: sum(container_cpu_usage_seconds_total{namespace="keptn"})
-  
+  container_memory_by_pod: max(container_memory_rss{namespace="keptn"}) by (pod)
